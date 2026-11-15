@@ -1,0 +1,29 @@
+<svg viewBox="0 0 120 120" class="w-full h-full filter drop-shadow-sm" xmlns="http://www.w3.org/2000/svg">
+  <!-- CCT Authentic Prism Emblem -->
+  <g transform="translate(10, 8)">
+    <!-- Red Facet (NANO) -->
+    <path d="M 50 2 L 6 74 L 32 74 Z" fill="#e11d48" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+    <!-- Green Facet (BIO) -->
+    <path d="M 50 2 L 32 74 L 50 74 Z" fill="#22c55e" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+    <!-- Yellow Facet (INFO) -->
+    <path d="M 50 2 L 50 74 L 68 74 Z" fill="#eab308" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+    <!-- Dark Blue Facet (COGNO) -->
+    <path d="M 50 2 L 68 74 L 94 74 Z" fill="#1e293b" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+
+    <!-- Text NANO (slanted along left slope: angle ~58 deg) -->
+    <text transform="translate(18, 62) rotate(-58)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="7.5" fill="#ffffff" letter-spacing="0.5">NANO</text>
+    
+    <!-- Text BIO (vertical in green slice) -->
+    <text x="41" y="66" transform="rotate(-90 41 66)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="8" fill="#14532d" letter-spacing="0.5">BIO</text>
+    
+    <!-- Text INFO (vertical in yellow slice) -->
+    <text x="59" y="68" transform="rotate(-90 59 68)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="7" fill="#713f12" letter-spacing="0.5">INFO</text>
+    
+    <!-- Text COGNO (slanted along right slope: angle ~58 deg) -->
+    <text transform="translate(73, 26) rotate(58)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="7.5" fill="#ffffff" letter-spacing="0.5">COGNO</text>
+
+    <!-- White Trapezoid Base (CCT) -->
+    <path d="M 6 74 L 94 74 L 84 98 L 16 98 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" stroke-linejoin="round"/>
+    <text x="50" y="93" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="19" fill="#000000" text-anchor="middle" letter-spacing="0.5">CCT</text>
+  </g>
+</svg>
