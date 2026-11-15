@@ -112,21 +112,45 @@
     </div>
   </div>
 
-  <!-- Academic Institutional Header / Masthead -->
+  <!-- Academic Institutional Header / Masthead with Official CCT & UoR Logo -->
   <header class="bg-white border-b border-slate-200 shadow-xs py-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         
-        <!-- University & Center Identity -->
+        <!-- Official CCT NBIC Brand Logo & Identity -->
         <div class="flex items-center space-x-4 text-center md:text-left">
-          <div class="w-16 h-16 rounded-full bg-univNavy text-white flex flex-col items-center justify-center border-2 border-amber-500 shadow-xs flex-shrink-0">
-            <span class="font-serif font-bold text-lg leading-none">CCT</span>
-            <span class="text-[8px] uppercase tracking-tighter text-amber-400">UOR • 1947</span>
+          <!-- Official CCT 4-Pillar Converging Emblem (SVG) -->
+          <div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center bg-slate-900 rounded-2xl border-2 border-amber-500/80 shadow-sm p-1.5">
+            <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer Converging Orbit -->
+              <circle cx="50" cy="50" r="42" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+              <!-- 4 Converging Tech Nodes -->
+              <!-- Nano (Cyan) -->
+              <circle cx="50" cy="18" r="9" fill="#0284c7" />
+              <!-- Bio (Green) -->
+              <circle cx="82" cy="50" r="9" fill="#16a34a" />
+              <!-- Cogno (Purple) -->
+              <circle cx="50" cy="82" r="9" fill="#7c3aed" />
+              <!-- AI (Orange) -->
+              <circle cx="18" cy="50" r="9" fill="#ea580c" />
+              <!-- Central Nexus Lines -->
+              <line x1="50" y1="18" x2="82" y2="50" stroke="#cbd5e1" stroke-width="2" opacity="0.5"/>
+              <line x1="82" y1="50" x2="50" y2="82" stroke="#cbd5e1" stroke-width="2" opacity="0.5"/>
+              <line x1="50" y1="82" x2="18" y2="50" stroke="#cbd5e1" stroke-width="2" opacity="0.5"/>
+              <line x1="18" y1="50" x2="50" y2="18" stroke="#cbd5e1" stroke-width="2" opacity="0.5"/>
+              <!-- Center Hub -->
+              <circle cx="50" cy="50" r="14" fill="#0c2340" stroke="#f59e0b" stroke-width="2.5"/>
+              <text x="50" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">CCT</text>
+            </svg>
           </div>
+
           <div>
-            <h2 class="text-base sm:text-xl font-bold text-univNavy tracking-tight uppercase">
-              Center For Converging Technologies (CCT)
-            </h2>
+            <div class="flex items-center gap-2 justify-center md:justify-start">
+              <h2 class="text-base sm:text-xl font-bold text-univNavy tracking-tight uppercase">
+                Center For Converging Technologies (CCT)
+              </h2>
+              <span class="hidden sm:inline-block bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">UOR • 1947</span>
+            </div>
             <p class="text-xs sm:text-sm text-slate-700 font-semibold">
               UNIVERSITY OF RAJASTHAN, JAIPUR
             </p>
@@ -161,12 +185,12 @@
           <a href="#about" class="text-white hover:text-amber-300 py-3 transition-colors">About Symposium</a>
           <a href="#tracks" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Scientific Tracks</a>
           <a href="#speakers" class="text-slate-200 hover:text-amber-300 py-3 transition-colors flex items-center gap-1">
-            Esteemed Speakers <span class="bg-amber-500 text-slate-950 text-[9px] font-bold px-1.5 py-0.5 rounded">14 Experts</span>
+            Speakers & Experts <span class="bg-amber-500 text-slate-950 text-[9px] font-bold px-1.5 py-0.5 rounded">21 Speakers</span>
           </a>
           <a href="#schedule" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Programme</a>
           <a href="#committee" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Patron & Committee</a>
           <a href="#registration" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Registration & Fee</a>
-          <a href="#partners" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Alumni Partners</a>
+          <a href="#partners" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Alumni & Sponsors</a>
           <a href="#contact" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Contact</a>
         </div>
 
@@ -178,11 +202,11 @@
             <div class="absolute left-0 top-11 z-50 w-56 rounded-lg border border-slate-200 bg-white p-2 text-slate-800 shadow-xl">
               <a href="#about" class="block rounded px-3 py-2 hover:bg-slate-100">About symposium</a>
               <a href="#tracks" class="block rounded px-3 py-2 hover:bg-slate-100">Scientific tracks</a>
-              <a href="#speakers" class="block rounded px-3 py-2 hover:bg-slate-100">Speakers</a>
+              <a href="#speakers" class="block rounded px-3 py-2 hover:bg-slate-100">Speakers & LinkedIn</a>
               <a href="#schedule" class="block rounded px-3 py-2 hover:bg-slate-100">Programme</a>
               <a href="#committee" class="block rounded px-3 py-2 hover:bg-slate-100">Committee</a>
               <a href="#registration" class="block rounded px-3 py-2 hover:bg-slate-100">Registration & fees</a>
-              <a href="#partners" class="block rounded px-3 py-2 hover:bg-slate-100">Alumni partners</a>
+              <a href="#partners" class="block rounded px-3 py-2 hover:bg-slate-100">Alumni & Sponsors</a>
               <a href="#contact" class="block rounded px-3 py-2 hover:bg-slate-100">Contact</a>
             </div>
           </details>
@@ -259,7 +283,7 @@
             </a>
             <a href="#speakers" class="px-5 py-2.5 rounded bg-white hover:bg-slate-100 text-univNavy font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-1.5">
               <i data-lucide="users" class="w-4 h-4"></i>
-              <span>View Esteemed Speakers</span>
+              <span>View 21 Esteemed Speakers</span>
             </a>
             <button onclick="document.getElementById('posterModal').classList.remove('hidden')" class="px-4 py-2.5 rounded border border-white/30 hover:bg-white/10 text-white font-medium text-xs uppercase tracking-wider transition-all flex items-center gap-1.5">
               <i data-lucide="file-text" class="w-4 h-4 text-amber-300"></i>
@@ -398,183 +422,447 @@
     </div>
   </section>
 
-  <!-- Esteemed Speakers (All 14 Speakers from Official Poster) -->
+  <!-- Esteemed Speakers (Complete Roster with Verified LinkedIn Links from symposium docket) -->
   <section id="speakers" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Distinguished Experts</span>
+        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Distinguished Experts & Scientists</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-univNavy mt-1">
           Esteemed Speakers
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm mt-1">
-          Leading researchers, industry pioneers, and distinguished CCT alumni addressing CONVERGENCE 2026:
+          Explore our distinguished speakers joining CONVERGENCE 2026. Click any speaker's name or LinkedIn badge to connect.
         </p>
       </div>
 
-      <!-- Complete 14 Speaker Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <!-- Complete 21 Speakers Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
         
-        <!-- Speaker 1 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded uppercase">Germany</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Dr. Neeraj Upadhyay</h4>
-          <p class="text-xs text-slate-600">Staff Scientist, UKB, Bonn, Germany</p>
-        </div>
-
-        <!-- Speaker 2 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded uppercase">IIT Jammu</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Dr. Vinay Sharma</h4>
-          <p class="text-xs text-slate-600">BSBE Department, IIT Jammu</p>
-        </div>
-
-        <!-- Speaker 3 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">Innovation</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Sachin Dubey</h4>
-          <p class="text-xs text-slate-600">Module Innovation</p>
-        </div>
-
-        <!-- Speaker 4 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase">Research</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Manoj Kumar Jangid</h4>
-          <p class="text-xs text-slate-600">Distinguished Researcher</p>
-        </div>
-
-        <!-- Speaker 5 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded uppercase">Industry</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Vinay Sharma</h4>
-          <p class="text-xs text-slate-600">Tata Semiconductors</p>
-        </div>
-
-        <!-- Speaker 6: Deepak Sharma (Highlighted) -->
-        <div class="p-4 rounded-xl bg-amber-50/90 border-2 border-amber-400 shadow-xs relative">
-          <span class="text-[10px] font-bold bg-amber-500 text-slate-950 px-2 py-0.5 rounded uppercase">Alumni Keynote</span>
-          <img src="deepak-sharma.png" alt="Deepak Sharma" class="mx-auto mt-3 h-24 w-24 rounded-full border-4 border-white object-cover shadow-md">
-          <h4 class="mt-2 text-sm font-bold text-univNavy"><a href="https://www.linkedin.com/in/deepaksharmaa/" target="_blank" rel="noopener noreferrer" class="hover:underline">Deepak Sharma <span aria-hidden="true">↗</span></a></h4>
-          <p class="text-xs text-amber-900 font-medium">Jalte Diye Foundation | CCT Alumnus</p>
-          <a href="https://www.linkedin.com/in/deepaksharmaa/" target="_blank" rel="noopener noreferrer" class="text-[11px] text-blue-700 hover:underline font-semibold block mt-1">LinkedIn profile</a>
-          <a href="https://jaltediyefoundation.org/convergence-2026.html" target="_blank" rel="noopener noreferrer" class="text-[11px] text-univNavy hover:underline font-semibold block mt-1.5">
-            Talk: Startup Engineering & Nurolab &rarr;
-          </a>
-        </div>
-
-        <!-- Speaker 7 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase">Academia</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Himmat Singh Kushwaha</h4>
-          <p class="text-xs text-slate-600">Asso. Professor, Manipal University</p>
-        </div>
-
-        <!-- Speaker 8 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded uppercase">IIT BHU</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Dr. Tara Chand</h4>
-          <p class="text-xs text-slate-600">HSS Dept., IIT BHU</p>
-        </div>
-
-        <!-- Speaker 9 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded uppercase">IIT Jodhpur</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Dr. Suman Dhaka</h4>
-          <p class="text-xs text-slate-600">HSS Dept. IIT Jodhpur</p>
-        </div>
-
-        <!-- Speaker 10 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase">Academia</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Dr. Navkiran Kalsi</h4>
-          <p class="text-xs text-slate-600">O.P. Jindal University</p>
-        </div>
-
-        <!-- Speaker 11 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">Industry</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Ankit Goyal</h4>
-          <p class="text-xs text-slate-600">Thionics</p>
-        </div>
-
-        <!-- Speaker 12 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">Industry</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Sarvar Singh</h4>
-          <p class="text-xs text-slate-600">SarBit</p>
-        </div>
-
-        <!-- Speaker 13 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded uppercase">IIM Udaipur</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Himanshu Joshi</h4>
-          <p class="text-xs text-slate-600">IIM Udaipur</p>
-        </div>
-
-        <!-- Speaker 14 -->
-        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-          <span class="text-[10px] font-mono font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase">Distinguished</span>
-          <h4 class="font-bold text-univNavy text-sm mt-2">Hariom Sharma</h4>
-          <p class="text-xs text-slate-600">Distinguished Speaker</p>
-        </div>
-
-      </div>
-
-      <!-- Deepak Sharma Talk & Nurolab Deep Dive Box -->
-      <div class="bg-gradient-to-r from-amber-50/50 via-white to-blue-50/40 p-6 rounded-2xl border-2 border-amber-300 shadow-xs">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-          <div class="md:col-span-4">
-            <span class="text-[10px] font-bold text-amber-800 uppercase tracking-wider bg-amber-100 px-2 py-0.5 rounded">
-              Invited Talk Spotlight
-            </span>
-            <h3 class="text-lg font-bold text-univNavy mt-2">Deepak Sharma</h3>
-            <p class="text-xs text-slate-600">Foundation Manager, Jalte Diye Foundation | CCT Alumnus</p>
-            <div class="mt-3">
-              <a href="https://www.linkedin.com/in/deepaksharmaa/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-blue-700 font-bold hover:underline mr-3">
-                LinkedIn Profile <span aria-hidden="true">↗</span>
-              </a>
-              <a href="https://jaltediyefoundation.org/convergence-2026.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-univBlue font-bold hover:underline">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> JDF Convergence 2026 Dossier
+        <!-- Speaker 1: Dr. Neeraj Upadhyay -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded uppercase border border-cyan-200">Germany • Neuroscience</span>
+              <a href="https://www.linkedin.com/in/neeraj-upadhyay-2a558418" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
               </a>
             </div>
-          </div>
-          <div class="md:col-span-8 md:border-l md:border-slate-200 md:pl-6 space-y-2">
-            <h4 class="text-base font-bold text-univNavy">"Startup Engineering for Social Impact"</h4>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Featuring <strong>Nurolab</strong> as an interdisciplinary case study integrating EEG signal acquisition, Artificial Intelligence, and mental health diagnostics to turn exploratory academic research into scalable grassroots social solutions.
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/neeraj-upadhyay-2a558418" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Neeraj Upadhyay</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Neuroscientist, University Hospital Bonn, Germany</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Uses functional brain imaging and network analysis to study how brain networks reorganize in neurological, neurodegenerative and endocrine conditions. 57 documents, 1,000+ citations.
             </p>
-            <div class="text-[11px] text-amber-900 font-mono bg-amber-100/60 p-2 rounded border border-amber-200">
-              EEG Sensors &rarr; Wavelet Preprocessing &rarr; Neural AI Classifier &rarr; Community Mental Health Diagnostics
+          </div>
+        </div>
+
+        <!-- Speaker 2: Dr. Himmat Singh Kushwaha -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase border border-amber-200">Manipal • Clean Energy</span>
+              <a href="https://www.linkedin.com/in/himmats" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/himmats" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Himmat Singh Kushwaha</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Associate Professor (Research), Physics, Manipal University Jaipur</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Materials for clean energy and environment: metal-air and sodium-ion batteries, catalysis, and sensors. PhD from IIT Mandi; DST INSPIRE Faculty Award 2018.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 3: Prof. Suman Dhaka -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-violet-800 bg-violet-50 px-2 py-0.5 rounded uppercase border border-violet-200">IIT Jodhpur • Emotion & Sleep</span>
+              <a href="https://www.linkedin.com/in/suman-dhaka-31b487300" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/suman-dhaka-31b487300" target="_blank" rel="noopener noreferrer" class="hover:underline">Prof. Suman Dhaka</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Associate Professor, School of Liberal Arts, IIT Jodhpur</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Studies the neural basis of emotion and its interaction with cognition using EEG, brain stimulation and computational modelling with focus on sleep and affect regulation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 4: Dr. Tara Chand -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded uppercase border border-emerald-200">IIT BHU • Affective Neuro</span>
+              <a href="https://www.linkedin.com/in/tara-chand-phd-147aba5b" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/tara-chand-phd-147aba5b" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Tara Chand</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor, IIT (BHU), Varanasi</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Affective neuroscience and cognitive psychology. PhD from University of Tübingen; researches brain/body stress responses, decision-making and neuromarketing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 5: Dr. Vinay Sharma (Tata) -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded uppercase border border-blue-200">Tata Electronics • Semi</span>
+              <a href="https://www.linkedin.com/in/vinaysharmantu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/vinaysharmantu" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Vinay Sharma</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Principal Engineer, Tata Electronics</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              PhD from NTU Singapore. Over a decade across materials research and semiconductor process development, including CMP and wafer bonding at Bosch and NAND tech at Micron.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 6: Deepak Sharma (Featured Alumnus) -->
+        <div class="academic-card p-5 rounded-xl border-2 border-amber-400 bg-amber-50/70 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-bold text-amber-950 bg-amber-400 px-2 py-0.5 rounded uppercase">CCT Alumnus • Invited Talk</span>
+              <a href="https://www.linkedin.com/in/deepaksharmaa/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#0a66c2] hover:text-[#004182] bg-white px-2 py-0.5 rounded border border-amber-300 shadow-xs transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <div class="flex items-center gap-3 mt-1 mb-2">
+              <img src="deepak-sharma.png" alt="Deepak Sharma" class="w-14 h-14 rounded-full border-2 border-white object-cover shadow-sm flex-shrink-0">
+              <div>
+                <h4 class="font-bold text-univNavy text-base">
+                  <a href="https://www.linkedin.com/in/deepaksharmaa/" target="_blank" rel="noopener noreferrer" class="hover:underline">Deepak Sharma</a>
+                </h4>
+                <p class="text-xs font-semibold text-amber-900">Founder & Secretary, JDF | CCT Alumnus</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-700 mt-1 leading-relaxed">
+              Works toward global impact and social tech through inclusion, dignity and dialogue. Presenting <strong>"Startup Engineering for Social Impact"</strong> featuring the <strong>Nurolab</strong> EEG+AI mental health study.
+            </p>
+            <div class="mt-2 pt-2 border-t border-amber-200">
+              <a href="https://jaltediyefoundation.org/convergence-2026.html" target="_blank" rel="noopener noreferrer" class="text-[11px] text-univNavy font-bold hover:underline inline-flex items-center gap-1">
+                <i data-lucide="external-link" class="w-3 h-3"></i> JDF Convergence 2026 Talk Dossier ↗
+              </a>
             </div>
           </div>
         </div>
+
+        <!-- Speaker 7: Dr. Abhijeet Ojha -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded uppercase border border-cyan-200">Manipal • Soft Matter</span>
+              <a href="https://www.linkedin.com/in/abhijeet-ojha-ph-d-1417ab149" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/abhijeet-ojha-ph-d-1417ab149" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Abhijeet Ojha</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor (Senior Scale), Biotech & Chemical Engg, MUJ</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Soft matter, biopolymers and nanomaterials, with graphene oxide gels for water purification. PhD from IIT Gandhinagar; visiting fellow at Sorbonne Université.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 8: Dr. Sanjeev Nara -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-violet-800 bg-violet-50 px-2 py-0.5 rounded uppercase border border-violet-200">IIT Mandi • Brain Rhythms</span>
+              <span class="text-[10px] text-slate-400 font-mono">Faculty Profile</span>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">Dr. Sanjeev Nara</h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor, School of Biosciences & Bioengineering, IIT Mandi</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Leads the Brain Rhythms and Cognition Lab: computational neuroscience, EEG/MEG/fMRI and machine learning for brain function. PhD from BCBL, Spain.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 9: Prof. (Dr.) Navkiran Kalsi -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-violet-800 bg-violet-50 px-2 py-0.5 rounded uppercase border border-violet-200">O.P. Jindal • Neurofeedback</span>
+              <a href="https://www.linkedin.com/in/navkiran-kalsi-phd-21390b49" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/navkiran-kalsi-phd-21390b49" target="_blank" rel="noopener noreferrer" class="hover:underline">Prof. (Dr.) Navkiran Kalsi</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Associate Professor & Assistant Dean, JSOC, O.P. Jindal Global University</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Uses EEG, ERPs and neurofeedback to study emotion regulation and social cognition. PhD from Sapienza University Rome; DST CSRI fellow at AIIMS New Delhi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 10: Dr. Himanshu Joshi -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded uppercase border border-cyan-200">NIMHANS • Neuroimaging</span>
+              <a href="https://www.linkedin.com/in/himanshu-joshi-b06ab4131" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/himanshu-joshi-b06ab4131" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Himanshu Joshi</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Post-Doctoral Fellow, India ENIGMA Initiative, NIMHANS</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Uses MRI, fMRI and MEG to study brain changes in mild cognitive impairment and Alzheimer's disease, and how tDCS alters brain connectivity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 11: Dr. Vinay Sharma (IIT Jammu) -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded uppercase border border-emerald-200">IIT Jammu • Nanotech</span>
+              <a href="https://www.linkedin.com/in/vinay-sharma-36123536" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/vinay-sharma-36123536" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Vinay Sharma</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor, Bioscience & Bioengineering, IIT Jammu</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Nanoscience and nanotechnology: carbon dots as optical sensors for water contaminants and near-infrared responsive nanostructures. PhD from IIT Indore.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 12: Dr. Lokesh Agrawal -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded uppercase border border-teal-200">SND Regenic • CEO</span>
+              <a href="https://www.linkedin.com/in/dr-lokesh-agrawal-ph-d-0a2a1754" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/dr-lokesh-agrawal-ph-d-0a2a1754" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Lokesh Agrawal</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">CEO, SND Regenic Research Labs; Assoc. Prof-Research, SRMU</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Doctorate from University of Tsukuba and five years at OIST, Japan. Research spans neuroscience, regenerative nanotechnology and AI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 13: Dr. Manoj Jangid -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase border border-amber-200">Univ. of Oklahoma • Batteries</span>
+              <a href="https://www.linkedin.com/in/manojcct" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/manojcct" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Manoj Jangid</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor, Aerospace & Mech Engg, Univ. of Oklahoma</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Solid-state batteries and electro-chemo-mechanical behavior of electrodes studied with operando methods. PhD from IIT Bombay; postdoc at Univ. of Michigan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 14: Dr. Kedarmal Verma -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-purple-800 bg-purple-50 px-2 py-0.5 rounded uppercase border border-purple-200">IIT Indore • Sleep & Memory</span>
+              <span class="text-[10px] text-slate-400 font-mono">CCT Alumnus</span>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">Dr. Kedarmal Verma</h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Assistant Professor, Humanities & Social Sciences, IIT Indore</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Researches sleep, memory distortions and cognitive psychology, including Yoga-Nidra. PhD from IIT Guwahati; B.Tech–M.Tech from University of Rajasthan (CCT).
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 15: Dr. Dinesh Bhalothia -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded uppercase border border-emerald-200">Manipal • Catalysis</span>
+              <a href="https://www.linkedin.com/in/dinesh-bhalothia-959746193" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/dinesh-bhalothia-959746193" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Dinesh Bhalothia</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Associate Professor, Manipal University Jaipur | CCT Alumnus</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Alumnus of CCT, University of Rajasthan. Works on nanocatalysts, hydrogen production, fuel cells and CO₂ conversion. PhD from NTHU, Taiwan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 16: Dr. Rajnish Kumar Gupta -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-violet-800 bg-violet-50 px-2 py-0.5 rounded uppercase border border-violet-200">MUJ • Neurofeedback</span>
+              <a href="https://www.linkedin.com/in/rajnish-kumar-gupta-580784185" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/rajnish-kumar-gupta-580784185" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Rajnish Kumar Gupta</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Associate Professor, Psychology, Manipal University Jaipur</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Cognitive and behavioral neuroscience, with EEG neurofeedback for ADHD, brain injury and stroke. PhD from Sapienza University Rome; trained at NIMHANS.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 17: Dr. Diwakar Kashyap -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded uppercase border border-cyan-200">Electrochemistry • 6 Patents</span>
+              <a href="https://www.linkedin.com/in/diwakar-kashyap-84281974" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/diwakar-kashyap-84281974" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Diwakar Kashyap</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Electrochemist & Materials Scientist</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Over ten years in fuel cells, water electrolyzers and electrocatalysis, from catalyst development to MEA fabrication. Holds six patents.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 18: Dr. Rakshit Dadarwal -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-indigo-800 bg-indigo-50 px-2 py-0.5 rounded uppercase border border-indigo-200">Göttingen • MRI Myelin</span>
+              <span class="text-[10px] text-slate-400 font-mono">Researcher</span>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">Dr. Rakshit Dadarwal</h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Neuroimaging Researcher, Georg-August-Universität Göttingen</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Acquires and processes multi-contrast MRI, imaging myelin and iron in the central nervous system. PhD from Göttingen and German Primate Center.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 19: Dr. Ankit Goyal -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase border border-amber-200">Thionics (Netherlands) • CTO</span>
+              <a href="https://www.linkedin.com/in/ankit-goyal-17650331" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/ankit-goyal-17650331" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Ankit Goyal</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Co-Founder & CTO, Thionics (Netherlands)</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Commercializing moisture-stable sulfide solid-state electrolytes for safer Li-ion batteries. 14+ years in battery and semiconductor technology.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 20: Dr. Sarvar Singh -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded uppercase border border-blue-200">Sarbit Innovations • CTO</span>
+              <a href="https://www.linkedin.com/in/sarvarsingh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/sarvarsingh" target="_blank" rel="noopener noreferrer" class="hover:underline">Dr. Sarvar Singh</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Founder & CTO, Sarbit Innovations, Jodhpur</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Nanosensors and microfabrication. PhD from IIT Jodhpur on a nano-sensing platform for trace-level detection in food quality assessment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Speaker 21: Sachin Dubey -->
+        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[10px] font-mono font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase border border-amber-200">Module Innovations • CEO</span>
+              <a href="https://www.linkedin.com/in/sachin-dubey-m010387" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors">
+                <i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn ↗
+              </a>
+            </div>
+            <h4 class="font-bold text-univNavy text-base">
+              <a href="https://www.linkedin.com/in/sachin-dubey-m010387" target="_blank" rel="noopener noreferrer" class="hover:underline">Sachin Dubey</a>
+            </h4>
+            <p class="text-xs font-semibold text-slate-700 mt-0.5">Founder & CEO, Module Innovations</p>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Builds rapid, affordable diagnostics for infectious diseases and antimicrobial resistance. Chevening CRISP Fellow at Univ. of Oxford; CARB-X funded.
+            </p>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- Published Day 1 programme highlights -->
-  <section id="schedule" class="py-16 bg-white border-b border-slate-200">
+  <section id="schedule" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">28–29 November 2026 · Jaipur</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-univNavy mt-1">Programme highlights</h2>
-        <p class="text-slate-600 text-xs sm:text-sm mt-2">A first look at Day 1. Session details for 29 November will be added when published.</p>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">A first look at Day 1 scientific schedule. Session details for 29 November will be updated upon final review.</p>
       </div>
       <div class="max-w-4xl mx-auto space-y-3">
-        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-white p-4">
           <p class="sm:w-36 shrink-0 text-xs font-bold text-amber-800">09:30–10:30<br><span class="text-[10px] uppercase tracking-wide text-slate-500">Inaugural plenary</span></p>
           <div><h3 class="font-bold text-univNavy text-sm">Inauguration & keynote on converging frontiers</h3><p class="text-xs text-slate-600 mt-1">Dignitaries, Vice-Chancellor (UoR) and Director, CCT · Main Auditorium</p></div>
         </article>
-        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-amber-200 bg-amber-50/60 p-4">
-          <p class="sm:w-36 shrink-0 text-xs font-bold text-amber-800">11:00–12:00<br><span class="text-[10px] uppercase tracking-wide text-slate-500">Invited talk</span></p>
-          <div><h3 class="font-bold text-univNavy text-sm">Startup Engineering for Social Impact & Nurolab</h3><p class="text-xs text-slate-600 mt-1">Deepak Sharma · Interdisciplinary case studies and Neuro-AI · Auditorium A</p></div>
+        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-amber-300 bg-amber-50/70 p-4 shadow-xs">
+          <p class="sm:w-36 shrink-0 text-xs font-bold text-amber-800">11:00–12:00<br><span class="text-[10px] uppercase tracking-wide text-slate-500">Invited keynote</span></p>
+          <div><h3 class="font-bold text-univNavy text-sm">Startup Engineering for Social Impact & Nurolab</h3><p class="text-xs text-slate-600 mt-1">Deepak Sharma (JDF | CCT Alumnus) · Interdisciplinary Neuro-AI case study · Auditorium A</p></div>
         </article>
-        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-white p-4">
           <p class="sm:w-36 shrink-0 text-xs font-bold text-amber-800">13:30–15:30<br><span class="text-[10px] uppercase tracking-wide text-slate-500">Technical session A</span></p>
           <div><h3 class="font-bold text-univNavy text-sm">Nanomaterials, Bio-MEMS & molecular computing</h3><p class="text-xs text-slate-600 mt-1">Contributed oral presentations and subject committee evaluation · Seminar Hall 1</p></div>
         </article>
-        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <article class="flex flex-col sm:flex-row gap-3 sm:gap-6 rounded-xl border border-slate-200 bg-white p-4">
           <p class="sm:w-36 shrink-0 text-xs font-bold text-amber-800">16:00–17:30<br><span class="text-[10px] uppercase tracking-wide text-slate-500">Interactive exhibit</span></p>
           <div><h3 class="font-bold text-univNavy text-sm">Poster demonstrations & student startup showcase</h3><p class="text-xs text-slate-600 mt-1">Booth demonstrations, prototype testing and hardware jury · Exhibition Atrium</p></div>
         </article>
@@ -583,7 +871,7 @@
   </section>
 
   <!-- Organizing Committee & Patron (Exact Names from Official Poster) -->
-  <section id="committee" class="py-16 bg-slate-50 border-b border-slate-200">
+  <section id="committee" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -673,7 +961,7 @@
   </section>
 
   <!-- Registration Fee Matrix (Exact figures from Official Poster) -->
-  <section id="registration" class="py-16 bg-white border-b border-slate-200">
+  <section id="registration" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -730,10 +1018,10 @@
         </div>
 
         <!-- Registration information -->
-        <div class="lg:col-span-5 bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-xs">
+        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-slate-200 shadow-xs">
           <span class="inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-amber-900"><i data-lucide="calendar-days" class="w-3.5 h-3.5"></i> Deadline · 25 November 2026</span>
           <h3 class="text-lg font-bold text-univNavy mt-4">Plan your participation</h3>
-          <p class="text-xs text-slate-600 leading-relaxed mt-2">The reference page lists the registration categories and fees. Use the event reference site for the latest registration instructions; this page does not collect or submit attendee details.</p>
+          <p class="text-xs text-slate-600 leading-relaxed mt-2">The reference portal details session tracks and delegate criteria. Visit the official registration portal below to reserve your in-person or virtual seat.</p>
           <a href="https://sites.google.com/view/cct-convergence-2026/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded bg-amber-500 px-4 py-3 text-xs font-bold uppercase tracking-wider text-slate-950 shadow transition-colors hover:bg-amber-400">
             Registration information <i data-lucide="external-link" class="w-4 h-4"></i>
           </a>
@@ -745,48 +1033,153 @@
     </div>
   </section>
 
-  <!-- CCT Alumni Partner Initiatives & UN SDGs (From Poster) -->
-  <section id="partners" class="py-14 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <!-- CCT Alumni & Partner Initiatives & Sponsors (With Official Brand Logos) -->
+  <section id="partners" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Ecosystem Collaborations</span>
-      <h3 class="text-xl font-bold text-univNavy mt-1 mb-8">
-        CCT Alumni Partner Initiatives & Sustainable Development Goals
-      </h3>
-
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-        <div class="p-4 bg-white rounded-xl border border-slate-200 flex flex-col items-center justify-center">
-          <span class="font-bold text-univNavy text-sm">SND REGENIC</span>
-          <span class="text-[10px] text-slate-500">Regenerative Tech</span>
-        </div>
-        <div class="p-4 bg-white rounded-xl border border-slate-200 flex flex-col items-center justify-center">
-          <span class="font-bold text-univNavy text-sm">MODULE INNOVATIONS</span>
-          <span class="text-[10px] text-slate-500">Point-of-Care Diagnostics</span>
-        </div>
-        <div class="p-4 bg-white rounded-xl border border-slate-200 flex flex-col items-center justify-center">
-          <span class="font-bold text-univNavy text-sm">MedSense</span>
-          <span class="text-[10px] text-slate-500">Healthcare Innovations @ Nanoscale</span>
-        </div>
-        <div class="p-4 bg-white rounded-xl border border-slate-200 flex flex-col items-center justify-center">
-          <a href="https://jaltediyefoundation.org/convergence-2026.html" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-700 text-sm hover:underline">JALTE DIYE FOUNDATION ↗</a>
-          <span class="text-[10px] text-slate-500">Startup Engineering & Nurolab</span>
-        </div>
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Ecosystem Collaborations</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-univNavy mt-1">
+          CCT Alumni & Partner Initiatives
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">
+          Celebrating deep-tech spin-offs, healthcare innovations, and impactful enterprises founded by CCT alumni:
+        </p>
       </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-3 text-[11px] font-semibold text-slate-600">
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 3: Good Health & Well-being</span>
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 7: Affordable & Clean Energy</span>
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 9: Industry, Innovation & Infrastructure</span>
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 12: Responsible Consumption</span>
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 13: Climate Action</span>
-        <span class="px-3 py-1 rounded bg-white border border-slate-200">SDG 17: Partnerships for the Goals</span>
+      <!-- Official Brand Logos Visual Showcase -->
+      <div class="max-w-4xl mx-auto mb-12 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 text-center shadow-xs">
+        <h4 class="text-xs font-bold text-blue-700 uppercase tracking-widest mb-6">Official Brand Partners</h4>
+        <img src="alumni-and-sponsors.png" alt="CCT Alumni and Partner Initiatives & Sponsors" class="w-full max-w-2xl mx-auto rounded-lg">
+      </div>
+
+      <!-- Detailed 7 Alumni & Partner Venture Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        
+        <!-- 1. SND Regenic -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded uppercase">Regenerative Tech</span>
+            <span class="text-[10px] text-slate-400 font-mono">Alumni Venture</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">SND REGENIC</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            Pioneering research in regenerative medicine, stem cell biomaterials, and advanced nano-therapeutics. Led by Dr. Lokesh Agrawal (CEO).
+          </p>
+        </div>
+
+        <!-- 2. Sarbit Innovations -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded uppercase">Nanosensors</span>
+            <span class="text-[10px] text-slate-400 font-mono">Alumni Venture</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">Sarbit Innovations</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            Microfabrication and ultra-sensitive nano-sensing platforms for food safety and environmental monitoring. Led by Dr. Sarvar Singh (CTO).
+          </p>
+        </div>
+
+        <!-- 3. Mini Mines -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded uppercase">Clean Tech</span>
+            <span class="text-[10px] text-slate-400 font-mono">Alumni Venture</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">MINI MINES</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            <em>"Extracting What Matters"</em> — High-efficiency closed-loop recycling and extraction of lithium-ion battery materials for sustainable circular economy.
+          </p>
+        </div>
+
+        <!-- 4. Jalte Diye Foundation -->
+        <div class="academic-card p-4 rounded-xl border border-amber-300 bg-amber-50/50">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-amber-900 bg-amber-200 px-2 py-0.5 rounded uppercase">Social Impact & Neuro</span>
+            <span class="text-[10px] text-amber-800 font-mono font-bold">Keynote Partner</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">Jalte Diye Foundation</h4>
+          <p class="text-xs text-slate-700 mt-1 leading-relaxed">
+            Bridging grassroots education and social engineering. Featuring <strong>Nurolab</strong> (EEG + AI mental health diagnostics). Led by Deepak Sharma.
+          </p>
+          <a href="https://jaltediyefoundation.org/convergence-2026.html" target="_blank" rel="noopener noreferrer" class="mt-2 text-[11px] text-univNavy font-bold hover:underline inline-flex items-center gap-1">
+            Talk Dossier ↗
+          </a>
+        </div>
+
+        <!-- 5. Thionics -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-purple-800 bg-purple-50 px-2 py-0.5 rounded uppercase">Solid-State Tech</span>
+            <span class="text-[10px] text-slate-400 font-mono">Alumni Venture</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">Thionics</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            Netherlands-based deep-tech startup developing moisture-stable sulfide solid-state electrolytes for safer next-gen energy storage. Led by Dr. Ankit Goyal.
+          </p>
+        </div>
+
+        <!-- 6. MedSense -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded uppercase">Nanomedicine</span>
+            <span class="text-[10px] text-slate-400 font-mono">Partner</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">MedSense</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            <em>"Healthcare Innovations @ Nanoscale"</em> — Miniaturized bio-nanorobotic diagnostic tools and targeted smart nanomedicine formulations.
+          </p>
+        </div>
+
+        <!-- 7. Module Innovations -->
+        <div class="academic-card p-4 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase">Point-of-Care Diagnostics</span>
+            <span class="text-[10px] text-slate-400 font-mono">Alumni Venture</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">MODULE INNOVATIONS</h4>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            Award-winning rapid diagnostic platforms tackling AMR and bloodstream infections without specialized laboratory infrastructure. Led by Sachin Dubey.
+          </p>
+        </div>
+
+        <!-- 8. UN SDGs Alignment -->
+        <div class="academic-card p-4 rounded-xl border border-emerald-200 bg-emerald-50/40">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold text-emerald-900 bg-emerald-200 px-2 py-0.5 rounded uppercase">Global Goals</span>
+            <span class="text-[10px] text-emerald-800 font-mono font-bold">UN SDGs</span>
+          </div>
+          <h4 class="font-bold text-univNavy text-sm">Sustainable Development</h4>
+          <p class="text-xs text-slate-700 mt-1 leading-relaxed">
+            CONVERGENCE 2026 champions UN SDGs 3, 7, 9, 12, 13, and 17 through technological translation for environmental health and affordable medicine.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Dedicated Sponsors Section: OneLab Neuro -->
+      <div class="max-w-4xl mx-auto rounded-2xl border-2 border-indigo-200 bg-gradient-to-r from-blue-50/70 via-indigo-50/40 to-white p-6 sm:p-8 shadow-xs">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="space-y-2 text-center sm:text-left">
+            <span class="text-[10px] font-bold text-indigo-900 bg-indigo-100 px-2.5 py-0.5 rounded uppercase tracking-wider">
+              Official Symposium Sponsor
+            </span>
+            <h3 class="text-2xl font-bold text-univNavy">OneLab Neuro</h3>
+            <p class="text-xs sm:text-sm text-slate-600 max-w-xl leading-relaxed">
+              Leading developer of neuro-technological diagnostic equipment, multi-channel EEG hardware, and computational cognitive assessment tools advancing brain health research across academia and healthcare.
+            </p>
+          </div>
+          <div class="p-3 bg-white rounded-xl border border-indigo-100 shadow-sm flex-shrink-0">
+            <span class="text-xl font-extrabold text-univNavy tracking-tight font-sans">OneLab Neuro</span>
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- Contact & Secretariat Section -->
-  <section id="contact" class="py-14 bg-white border-b border-slate-200">
+  <section id="contact" class="py-14 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center space-y-3">
         <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Secretariat Communication</span>
@@ -912,7 +1305,6 @@
         document.getElementById('posterModal').classList.remove('hidden');
       });
     }
-
   </script>
 </body>
 </html>
