@@ -1202,76 +1202,128 @@
         </div>
       </div>
 
-      <!-- Committee Hierarchy Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+      <!-- Two Columns: Organizing Committee & Advisory Committee -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         
-        <!-- Chairperson & Convener -->
-        <div class="academic-card p-5 rounded-xl flex items-center gap-3.5">
-          <img src="neelima-gupta.png" alt="Prof. Neelima Gupta" class="w-14 h-14 rounded-full object-cover border-2 border-amber-400 shadow-xs flex-shrink-0">
-          <div class="min-w-0 flex-1">
-            <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-0.5">Chairperson & Convener</span>
-            <h4 class="font-bold text-univNavy text-sm leading-snug">Prof. Neelima Gupta</h4>
-            <p class="text-slate-600 text-[11px] mt-0.5">Director, CCT, UOR</p>
+        <!-- Left Column: Organizing Committee -->
+        <div class="bg-slate-50/80 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-6">
+          <div class="border-b border-slate-200 pb-3">
+            <span class="text-amber-800 text-[11px] font-bold uppercase tracking-widest block">Executive Panel</span>
+            <h3 class="text-xl font-bold text-univNavy">Organizing Committee</h3>
+          </div>
+
+          <!-- Chairperson & Convener -->
+          <div class="academic-card p-5 rounded-xl flex items-center gap-4 bg-white border border-slate-200 shadow-xs">
+            <img src="neelima-gupta.png" alt="Prof. Neelima Gupta" class="w-16 h-16 rounded-full object-cover border-2 border-amber-400 shadow-xs flex-shrink-0">
+            <div class="min-w-0 flex-1">
+              <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-0.5">Chairperson &amp; Convener</span>
+              <h4 class="font-bold text-univNavy text-base leading-snug">Prof. Neelima Gupta</h4>
+              <p class="text-slate-600 text-xs mt-0.5">Director, CCT, University of Rajasthan</p>
+            </div>
+          </div>
+
+          <!-- Co-Chairpersons & Co-conveners (Swapped per official directive) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div class="academic-card p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-2">Co-Chairpersons</span>
+              <ul class="text-slate-800 space-y-1.5 font-medium">
+                <li>&bull; Prof. Nupur Mathur</li>
+                <li>&bull; Prof. R. Boolchandani</li>
+                <li>&bull; Dr. Manisha Gupta</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-2">Co-conveners</span>
+              <ul class="text-slate-800 space-y-1.5 font-medium">
+                <li>&bull; Dr. Preeti Mishra</li>
+                <li>&bull; Dr. Mamraj Singh</li>
+                <li>&bull; Dr. Vijay Parewa</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Organizing Secretaries & Jt. Organizing Secretaries -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div class="academic-card p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-2">Organizing Secretaries</span>
+              <ul class="text-slate-800 space-y-1.5 font-medium">
+                <li>&bull; Dr. Amanpal Singh Clair</li>
+                <li>&bull; Dr. Ramhari Meena</li>
+              </ul>
+            </div>
+
+            <div class="academic-card p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-2">Jt. Organizing Secretaries</span>
+              <ul class="text-slate-800 space-y-1.5 font-medium">
+                <li>&bull; Dr. Indu S. Sankhla</li>
+                <li>&bull; Dr. Vandana Nunia</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coordinators -->
+          <div class="academic-card p-4 rounded-xl bg-white border border-slate-200 shadow-xs text-xs">
+            <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-2">Coordinators</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-800 font-medium">
+              <span>&bull; Dr. M.L. Vasita</span>
+              <span>&bull; Dr. R.S. Yadav</span>
+              <span>&bull; Dr. Swapnil Bharadwaj</span>
+              <span>&bull; Dr. Vijay Beniwal</span>
+              <span>&bull; Dr. Uttam Lawania</span>
+            </div>
           </div>
         </div>
 
-        <!-- Co-Chairpersons -->
-        <div class="academic-card p-5 rounded-xl">
-          <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-1">Co-Chairpersons</span>
-          <ul class="text-slate-800 space-y-1 font-medium">
-            <li>• Dr. Preeti Mishra</li>
-            <li>• Dr. Mamraj Singh</li>
-            <li>• Dr. Vijay Parewa</li>
-          </ul>
-        </div>
+        <!-- Right Column: Advisory Committee -->
+        <div class="bg-slate-50/80 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-6">
+          <div class="border-b border-slate-200 pb-3">
+            <span class="text-amber-800 text-[11px] font-bold uppercase tracking-widest block">Distinguished Academicians &amp; Scientists</span>
+            <h3 class="text-xl font-bold text-univNavy">Advisory Committee</h3>
+          </div>
 
-        <!-- Co-conveners -->
-        <div class="academic-card p-5 rounded-xl">
-          <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-1">Co-conveners</span>
-          <ul class="text-slate-800 space-y-1 font-medium">
-            <li>• Prof. Nupur Mathur</li>
-            <li>• Prof. R. Boolchandani</li>
-            <li>• Dr. Manisha Gupta</li>
-          </ul>
-        </div>
+          <div class="academic-card p-5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-slate-800">
+              <!-- Column 1 -->
+              <div class="space-y-2">
+                <p class="font-medium">&bull; Prof. B.K. Sharma <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. S. L. Kothari <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. A. K. Nagawat <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. Deepak Bhatanagar <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. Ramvir Singh <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. K.V.R. Rao <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. P.J. John <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. R. K. Singhal <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. S. K. Gupta <span class="text-[10px] text-slate-500 block pl-3">(Former Director, CCT)</span></p>
+                <p class="font-medium">&bull; Prof. Sumita Kachhwaha <span class="text-[10px] text-slate-500 block pl-3">(Coordinator, ECH, UOR)</span></p>
+                <p class="font-medium">&bull; Prof. Vidya Patni</p>
+                <p class="font-medium">&bull; Prof. Kailash Agrawal</p>
+                <p class="font-medium">&bull; Prof. Kananbala Sharma</p>
+                <p class="font-medium">&bull; Prof. Sushila Pareek</p>
+              </div>
 
-        <!-- Organizing Secretaries -->
-        <div class="academic-card p-5 rounded-xl">
-          <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-1">Organizing Secretaries</span>
-          <ul class="text-slate-800 space-y-1 font-medium">
-            <li>• Dr. Amanpal Singh Clair</li>
-            <li>• Dr. Ramhari Meena</li>
-          </ul>
+              <!-- Column 2 -->
+              <div class="space-y-2">
+                <p class="font-medium">&bull; Prof. Mahesh C. Sharma <span class="text-[10px] text-slate-500 block pl-3">(Plants Med Laboratories Pvt Ltd.)</span></p>
+                <p class="font-medium">&bull; Dr. Neeraj Upadhyay</p>
+                <p class="font-medium">&bull; Dr. Vinay Sharma</p>
+                <p class="font-medium">&bull; Dr. Greeshma Sharma</p>
+                <p class="font-medium">&bull; Dr. Himanshu Joshi</p>
+                <p class="font-medium">&bull; Dr. Navkiran Kalsi</p>
+                <p class="font-medium">&bull; Dr. Hariom Sharma</p>
+                <p class="font-medium">&bull; Dr. Tara Chand</p>
+                <p class="font-medium">&bull; Dr. Mukesh Kumar Saini</p>
+                <p class="font-medium">&bull; Dr. Abhineet</p>
+                <p class="font-medium">&bull; Dr. Diwakar Kashyap</p>
+                <p class="font-medium">&bull; Dr. Rakshit Dadarwal</p>
+                <p class="font-medium">&bull; Dr. Renu Bisht <span class="text-[10px] text-slate-500 block pl-3">(Coordinator, E-YUVA UoR)</span></p>
+                <p class="font-medium">&bull; Mr. Jaiprakash Kushwaha</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-
-      <!-- Secondary Committee Row -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-xs">
-        
-        <!-- Jt. Organizing Secretaries -->
-        <div class="academic-card p-5 rounded-xl">
-          <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-1">Jt. Organizing Secretaries</span>
-          <div class="flex flex-wrap gap-4 text-slate-800 font-medium">
-            <span>• Dr. Indu S. Sankhla</span>
-            <span>• Dr. Vandana Nunia</span>
-          </div>
-        </div>
-
-        <!-- Coordinators -->
-        <div class="academic-card p-5 rounded-xl">
-          <span class="text-amber-700 font-bold uppercase tracking-wider block text-[10px] mb-1">Coordinators</span>
-          <div class="grid grid-cols-2 gap-2 text-slate-800 font-medium">
-            <span>• Dr. M.L. Vasita</span>
-            <span>• Dr. R.S. Yadav</span>
-            <span>• Dr. Swapnil Bharadwaj</span>
-            <span>• Dr. Vijay Beniwal</span>
-            <span>• Dr. Uttam Lawania</span>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </section>
 
