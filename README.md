@@ -9,22 +9,16 @@ National Interdisciplinary Symposium on Converging Technologies (Nano, Bio, Info
 
 ---
 
-## 🚀 GitHub Pages (`sarthak2633u.github.io/convergence26.github.io`)
+## Website and source code
 
-1. Create a public repository on your GitHub profile named:
-   ```
-   convergence26.github.io
-   ```
-2. In your terminal inside this folder, connect and push:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/sarthak2633u/convergence26.github.io.git
-   git push -u origin main
-   ```
-3. GitHub Pages will automatically publish the website at:
-   **`https://sarthak2633u.github.io/convergence26.github.io/`**
+- **Live website:** [https://convergence26.github.io/](https://convergence26.github.io/)
+- **Source repository:** [https://github.com/sarthak2633u/convergence26.github.io](https://github.com/sarthak2633u/convergence26.github.io)
+
+To edit the website on your computer, download or clone the repository, open the folder in a code editor such as Visual Studio Code, and edit `index.html`. Keep the image folders and image files with the page. Open `index.html` in a browser to preview your local changes.
+
+Local edits do not change the live website. Publishing changes requires write access to the source repository and pushing the updated files to its configured GitHub Pages branch.
 
 ---
 
 ## 🤝 Open Source Contributions
-This project is open-source so that CCT students, alumni, and committee members can contribute sessions, schedule updates, speaker profiles, and paper guidelines.
+This project is open-source so that CCT students, alumni, and committee members can contribute sessions, schedule updates, speaker profiles, and paper guidelines. Use the source repository link above to browse or contribute changes.
