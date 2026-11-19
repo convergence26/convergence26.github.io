@@ -45,7 +45,7 @@ Website management and development credit goes to CCT alumni & students for thei
 | Contributor | Contribution |
 | --- | --- |
 | [Deepak Sharma](https://github.com/depthgr8) | UI/UX and website/flyer management |
-| [Sarthak](https://github.com/sarthak2633u) | Web development |
+| [sarthak yadav](https://github.com/sarthak2633u) | Web development |
 | [Pranav](https://github.com/gaurpranav-neuro), [Prince](https://github.com/Prince1904247) & [Maitri](https://github.com/maitrz) | Content curation and information validation |
 
 #### Under the supervision of Prof. Neelima Gupta, Director, CCT, UoR
