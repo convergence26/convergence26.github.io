@@ -33,9 +33,9 @@ Connect with the CCT community:
 
 Website management and development are credited to the CCT alumni and student technical team.
 
-| Contributor | Contribution | Profile |
-| --- | --- | --- |
-| Pranav Vats | Website development | [GitHub](https://github.com/gaurpranav-neuro) |
-| Sarthak Yadav | Web developer | [GitHub](https://github.com/sarthak2633u) |
-| Prince | Website development | [GitHub](https://github.com/Prince1904247) |
-| Maitri | Website development | [GitHub](https://github.com/maitrz) |
+| Contributor | Contribution | GitHub | LinkedIn |
+| --- | --- | --- | --- |
+| Pranav Vats | Website development | [GitHub](https://github.com/gaurpranav-neuro) | [LinkedIn](https://www.linkedin.com/in/pranav-gaur-ba348b306/) |
+| Sarthak Yadav | Web developer | [GitHub](https://github.com/sarthak2633u) | [LinkedIn](https://www.linkedin.com/in/sarthak-yadav-758296423/) |
+| Prince | Website development | [GitHub](https://github.com/Prince1904247) | [LinkedIn](https://www.linkedin.com/in/prince-raj-singh-rathore-b47727414/) |
+| Maitri | Website development | [GitHub](https://github.com/maitrz) | [LinkedIn](https://www.linkedin.com/in/maitri-srivastava-53896a439/) |
