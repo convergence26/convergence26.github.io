@@ -1,9 +1,8 @@
-# CONVERGENCE 2026 — Official Website
+# Convergence 2026 — Official Website's source repo
 **Centre for Converging Technologies (CCT), University of Rajasthan, Jaipur**
 
 <table>
   <tr>
-    <td width="18%" align="center"><a href="https://www.linkedin.com/company/centre-for-converging-technologies-uor-jaipur"><img src="logos/cct-linkedin-profile.png" alt="CCT campus profile picture" width="140"></a></td>
     <td width="82%"><img src="logos/cct-linkedin-banner.png" alt="CCT campus banner" width="100%"></td>
   </tr>
 </table>
@@ -12,14 +11,13 @@ National Interdisciplinary Symposium on Converging Technologies (Nano, Bio, Info
 
 - **Dates:** November 28–29, 2026
 - **Venue:** CCT, University of Rajasthan, Jaipur
-- **Invited Alumni Keynote:** Deepak Sharma (Foundation Manager, Jalte Diye Foundation) on *"Startup Engineering for Social Impact & Nurolab"*
 
 ---
 
 ## Website and source code
 
-- **Live website:** [https://convergence26.github.io/](https://convergence26.github.io/)
-- **Source repository:** [https://github.com/convergence26/convergence26.github.io](https://github.com/convergence26/convergence26.github.io)
+**Live website:** [https://convergence26.github.io/](https://convergence26.github.io/)
+
 
 To edit the website on your computer, download or clone the repository, open the folder in a code editor such as Visual Studio Code, and edit `index.html`. Keep the image folders and image files with the page. Open `index.html` in a browser to preview your local changes.
 
@@ -27,7 +25,7 @@ Local edits do not change the live website. Publishing changes requires write ac
 
 ---
 
-## 🤝 Open Source Contributions
+## Open Source Contributions
 We gratefully acknowledge CCT alumni and students for their participation and valuable contributions to Convergence 2026 and this project.
 
 This project is open-source so that CCT students, alumni, and committee members can contribute sessions, schedule updates, speaker profiles, and paper guidelines. Use the source repository link above to browse or contribute changes.
@@ -37,13 +35,12 @@ Connect with the CCT community on LinkedIn:
 - [CCT LinkedIn page](https://www.linkedin.com/company/centre-for-converging-technologies-uor-jaipur)
 - [Private LinkedIn group: CCT Alumni and students](https://www.linkedin.com/groups/16857007/)
 
-| CCT | CCT Alumni and Students |
-| --- | --- |
-| <a href="https://www.linkedin.com/company/centre-for-converging-technologies-uor-jaipur"><img src="logos/cct-four-panel-pyramid.png" alt="CCT logo" width="180"></a> | <a href="https://www.linkedin.com/groups/16857007/"><img src="logos/cct-alumni-students.png" alt="CCT Alumni and Students logo" width="180"></a> |
 
 ## Credits
 
 Website management and development credit goes to CCT alumni & students for their participation and contributions.
+
+<a href="https://www.linkedin.com/company/centre-for-converging-technologies-uor-jaipur"><img src="logos/cct-alumni-students.png" alt="CCT logo" width="180"></a>
 
 | Contributor | Contribution |
 | --- | --- |
