@@ -37,4 +37,4 @@ Connect with the CCT community:
 | [Sarthak Yadav](https://www.linkedin.com/in/sarthak-yadav-758296423/) ([GitHub](https://github.com/sarthak2633u)) | Web development |
 | [Pranav Vats](https://www.linkedin.com/in/pranav-gaur-ba348b306/) ([GitHub](https://github.com/gaurpranav-neuro)), [Prince](https://www.linkedin.com/in/prince-raj-singh-rathore-b47727414/) ([GitHub](https://github.com/Prince1904247)) & [Maitri](https://www.linkedin.com/in/maitri-srivastava-53896a439/) ([GitHub](https://github.com/maitrz)) | Content curation and information validation |
 
-**Under the supervision of Prof. Neelima Gupta, Director, CCT, UoR.**
+**Under the leadership of Dr. Yogesh Joshi (Director, CCT, UoR) and Prof. Neelima Gupta (Convener, CONVERGENCE 2026).**
