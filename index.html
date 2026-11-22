@@ -75,9 +75,20 @@
       box-shadow: inset 0 0 0 9999px rgba(12, 35, 64, 0.04), 0 10px 25px -5px rgba(12, 35, 64, 0.08);
       transform: translateY(-2px);
     }
-    #partners .academic-card > div:first-child,
-    #partners .academic-card > div:first-child > .h-20 {
-      border-color: inherit;
+    #partners .organization-card {
+      background: #fff;
+    }
+    #partners .organization-card:hover {
+      box-shadow: 0 10px 25px -5px rgba(12, 35, 64, 0.08);
+    }
+    #site-nav .desktop-nav a[aria-current="location"] {
+      color: #fcd34d;
+      font-weight: 700;
+    }
+    #site-nav .mobile-nav a[aria-current="location"] {
+      background: #fef3c7;
+      color: #92400e;
+      font-weight: 700;
     }
     .academic-table th {
       background-color: #0c2340;
@@ -147,10 +158,14 @@
         </div>
 
         <!-- Official Symposium Badge & Quick Actions -->
-        <div class="flex items-center space-x-3">
-          <a href="poster.jpg" download="Convergence_2026_Announcement_Flyer.jpg" class="px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold flex items-center gap-1.5 border border-slate-300 transition-colors">
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <a href="flyer.html" class="px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold flex items-center gap-1.5 border border-slate-300 transition-colors">
+            <i data-lucide="eye" class="w-4 h-4 text-amber-600"></i>
+            <span>View Flyer</span>
+          </a>
+          <a href="flyer.pdf" download="Convergence_2026_Flyer.pdf" class="px-3.5 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold flex items-center gap-1.5 border border-slate-300 transition-colors">
             <i data-lucide="download" class="w-4 h-4 text-amber-600"></i>
-            <span>Announcement Flyer</span>
+            <span>Download Flyer</span>
           </a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8xqsVfSPqfrdqEZEdeubZsmsNL2SgbyLPwOGH0iUCqIQbhg/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors shadow">
             Register
@@ -162,15 +177,15 @@
   </header>
 
   <!-- Sticky Academic Navigation Bar -->
-  <nav class="sticky top-0 z-40 bg-univNavy text-white shadow-md text-sm font-medium">
+  <nav id="site-nav" class="sticky top-0 z-40 bg-univNavy text-white shadow-md text-sm font-medium" aria-label="Site navigation">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-12">
         
         <!-- Navigation Menu -->
-        <div class="hidden lg:flex items-center space-x-6 text-xs tracking-wider">
+        <div class="desktop-nav hidden lg:flex items-center space-x-6 text-xs tracking-wider">
           <a href="#about" class="text-white hover:text-amber-300 py-3 transition-colors">About Symposium</a>
           <a href="#tracks" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">Scientific Tracks</a>
-          <a href="#abstract-guidelines" class="text-amber-300 hover:text-white py-3 transition-colors flex items-center gap-1 font-semibold">
+          <a href="#abstract-guidelines" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">
             Abstract Guidelines
           </a>
           <a href="#speakers" class="text-slate-200 hover:text-amber-300 py-3 transition-colors">
@@ -188,11 +203,11 @@
           <span class="text-xs font-bold text-amber-300 tracking-wider">Convergence 2026</span>
           <details class="relative">
             <summary aria-label="Open site navigation" class="list-none cursor-pointer rounded border border-white/30 p-2 text-white hover:bg-white/10 [&::-webkit-details-marker]:hidden"><i data-lucide="menu" class="w-4 h-4"></i></summary>
-            <div class="absolute left-0 top-11 z-50 w-56 rounded-lg border border-slate-200 bg-white p-2 text-slate-800 shadow-xl">
+            <div class="mobile-nav absolute left-0 top-11 z-50 w-56 rounded-lg border border-slate-200 bg-white p-2 text-slate-800 shadow-xl">
               <a href="#about" class="block rounded px-3 py-2 hover:bg-slate-100">About Symposium</a>
               <a href="#tracks" class="block rounded px-3 py-2 hover:bg-slate-100">Scientific Tracks</a>
-              <a href="#abstract-guidelines" class="block rounded px-3 py-2 hover:bg-slate-100 font-semibold text-amber-700 flex items-center justify-between">
-                Abstract Guidelines <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              <a href="#abstract-guidelines" class="block rounded px-3 py-2 hover:bg-slate-100">
+                Abstract Guidelines
               </a>
               <a href="#speakers" class="block rounded px-3 py-2 hover:bg-slate-100">Speakers</a>
               <a href="#schedule" class="block rounded px-3 py-2 hover:bg-slate-100">Programme</a>
@@ -1572,13 +1587,13 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         
         <!-- 1. MiniMines -->
-        <div class="academic-card p-5 rounded-xl border border-green-300 bg-green-50/40 flex flex-col justify-between hover:border-green-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-green-300 flex flex-col justify-between hover:border-green-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-green-900 bg-green-200 px-2 py-0.5 rounded uppercase border border-green-300">Clean Tech &amp; Recycling</span>
               <span class="text-[10px] text-green-800 font-mono font-bold">Alumni Sponsor</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://m-mines.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/minimines.png" alt="MiniMines" class="max-h-14 max-w-[150px] object-contain"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">MiniMines</h4>
@@ -1595,13 +1610,13 @@
         </div>
 
         <!-- 2. Sarv -->
-        <div class="academic-card p-5 rounded-xl border border-green-300 bg-green-50/40 flex flex-col justify-between hover:border-green-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-green-300 flex flex-col justify-between hover:border-green-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-green-900 bg-green-200 px-2 py-0.5 rounded uppercase border border-green-300">Cloud Telephony &amp; AI</span>
               <span class="text-[10px] text-green-800 font-mono font-bold">Alumni Sponsor</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://www.sarv.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/sarv.png" alt="Sarv" class="max-h-14 max-w-[140px] object-contain"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">Sarv</h4>
@@ -1618,13 +1633,13 @@
         </div>
 
         <!-- 3. OneLab Neuro -->
-        <div class="academic-card p-5 rounded-xl border border-purple-300 bg-purple-50/40 flex flex-col justify-between hover:border-purple-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-purple-300 flex flex-col justify-between hover:border-purple-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-purple-900 bg-purple-200 px-2 py-0.5 rounded uppercase border border-purple-300">Neurotechnology</span>
               <span class="text-[10px] text-purple-800 font-mono font-bold">External Sponsor</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://onelabneuro.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/onelab-neuro.png" alt="OneLab Neuro" class="max-h-14 max-w-[140px] object-contain"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">OneLab Neuro</h4>
@@ -1641,13 +1656,13 @@
         </div>
 
         <!-- 4. Bachpan Play School -->
-        <div class="academic-card p-5 rounded-xl border border-purple-300 bg-purple-50/40 flex flex-col justify-between hover:border-purple-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-purple-300 flex flex-col justify-between hover:border-purple-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-purple-900 bg-purple-200 px-2 py-0.5 rounded uppercase border border-purple-300">Early Childhood Learning</span>
               <span class="text-[10px] text-purple-800 font-mono font-bold">External Sponsor</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <img src="logos/bachpan.png" alt="Bachpan Play School" class="max-h-14 max-w-[140px] object-contain">
             </div>
             <h4 class="font-bold text-univNavy text-base">Bachpan Play School</h4>
@@ -1664,13 +1679,13 @@
         </div>
 
         <!-- 11. ECH Incubation Centre, UOR -->
-        <div class="academic-card p-5 rounded-xl border border-orange-300 bg-orange-50/40 flex flex-col justify-between hover:border-orange-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-orange-300 flex flex-col justify-between hover:border-orange-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-orange-900 bg-orange-200 px-2 py-0.5 rounded uppercase border border-orange-300">Incubation &amp; Innovation</span>
               <span class="text-[10px] text-orange-800 font-mono font-bold">Institutional Sponsor</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://www.uniraj.ac.in" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/ech-uor.png" alt="ECH Incubation Centre, University of Rajasthan" class="max-h-16 max-w-[150px] object-contain rounded-lg"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">ECH Incubation Centre, UoR</h4>
@@ -1688,13 +1703,13 @@
 
 
         <!-- 5. Jalte Diye Foundation -->
-        <div class="academic-card p-5 rounded-xl border border-amber-300 bg-amber-50/40 flex flex-col justify-between hover:border-amber-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-amber-300 flex flex-col justify-between hover:border-amber-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-amber-900 bg-amber-200 px-2 py-0.5 rounded uppercase border border-amber-300">Social Impact & Neuro</span>
               <span class="text-[10px] text-amber-800 font-mono font-bold">Alumni venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <img src="logos/jalte-diye.png" alt="Jalte Diye Foundation" class="max-h-14 max-w-[120px] object-contain">
             </div>
             <h4 class="font-bold text-univNavy text-base">Jalte Diye Foundation</h4>
@@ -1714,13 +1729,13 @@
         </div>
 
         <!-- 6. Thionics -->
-        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-purple-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-purple-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-purple-800 bg-purple-50 px-2 py-0.5 rounded uppercase border border-purple-200">Solid-State Tech</span>
               <span class="text-[10px] text-slate-500 font-mono">Alumni Venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://www.thionics.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/thionics.png" alt="Thionics" class="max-h-14 max-w-[140px] object-contain"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">Thionics</h4>
@@ -1737,13 +1752,13 @@
         </div>
 
         <!-- 7. Module Innovations -->
-        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-amber-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-amber-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded uppercase border border-amber-200">Point-of-Care Diagnostics</span>
               <span class="text-[10px] text-slate-500 font-mono">Alumni Venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <img src="logos/module-innovations.png" alt="Module Innovations" class="max-h-14 max-w-[150px] object-contain">
             </div>
             <h4 class="font-bold text-univNavy text-base">Module Innovations</h4>
@@ -1760,13 +1775,13 @@
         </div>
 
         <!-- 8. MedSense -->
-        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-sky-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-sky-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded uppercase border border-sky-200">Nanomedicine & Robotics</span>
               <span class="text-[10px] text-slate-500 font-mono">Alumni Venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <img src="logos/medsense.png" alt="MedSense" class="max-h-14 max-w-[150px] object-contain">
             </div>
             <h4 class="font-bold text-univNavy text-base">MedSense</h4>
@@ -1783,13 +1798,13 @@
         </div>
 
         <!-- 9. Sarbit Innovations -->
-        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-blue-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-blue-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded uppercase border border-blue-200">Nanosensors & Devices</span>
               <span class="text-[10px] text-slate-500 font-mono">Alumni Venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <img src="logos/sarbit.png" alt="Sarbit Innovations" class="max-h-14 max-w-[120px] object-contain">
             </div>
             <h4 class="font-bold text-univNavy text-base">Sarbit Innovations</h4>
@@ -1806,13 +1821,13 @@
         </div>
 
         <!-- 10. SND Regenic -->
-        <div class="academic-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-teal-400 transition-all">
+        <div class="academic-card organization-card p-5 rounded-xl border border-slate-200 flex flex-col justify-between hover:border-teal-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded uppercase border border-teal-200">Regenerative Tech</span>
               <span class="text-[10px] text-slate-500 font-mono">Alumni Venture</span>
             </div>
-            <div class="h-20 flex items-center justify-start bg-white rounded-lg py-2 pr-2 mb-3 border">
+            <div class="h-20 flex items-center justify-start py-2 pr-2 mb-3">
               <a href="https://www.sndregenic.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-start w-full h-full"><img src="logos/snd-regenic.png" alt="SND Regenic" class="max-h-14 max-w-[120px] object-contain"></a>
             </div>
             <h4 class="font-bold text-univNavy text-base">SND REGENIC</h4>
@@ -1969,6 +1984,48 @@
 
   <!-- Scripts -->
   <script>
+    const navigation = document.getElementById('site-nav');
+    const navigationLinks = Array.from(navigation.querySelectorAll('a[href^="#"]'));
+    const navigationSections = Array.from(navigation.querySelectorAll('.desktop-nav a[href^="#"]'))
+      .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+      .filter(Boolean);
+
+    function updateActiveNavigation() {
+      const threshold = navigation.getBoundingClientRect().bottom + 40;
+      let activeSection = null;
+      for (const section of navigationSections) {
+        if (section.getBoundingClientRect().top <= threshold) {
+          activeSection = section;
+        } else {
+          break;
+        }
+      }
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        activeSection = navigationSections[navigationSections.length - 1];
+      }
+      for (const link of navigationLinks) {
+        if (activeSection && link.getAttribute('href') === `#${activeSection.id}`) {
+          link.setAttribute('aria-current', 'location');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      }
+    }
+
+    let navigationUpdatePending = false;
+    function scheduleNavigationUpdate() {
+      if (!navigationUpdatePending) {
+        navigationUpdatePending = true;
+        requestAnimationFrame(() => {
+          updateActiveNavigation();
+          navigationUpdatePending = false;
+        });
+      }
+    }
+    window.addEventListener('scroll', scheduleNavigationUpdate, { passive: true });
+    window.addEventListener('resize', scheduleNavigationUpdate);
+    updateActiveNavigation();
+
     lucide.createIcons();
   </script>
 </body>

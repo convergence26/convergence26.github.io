@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convergence 2026 Flyer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f1f5f9;
+      color: #0c2340;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem;
+      background: #fff;
+    }
+    h1 { margin: 0; font-size: 1.1rem; }
+    a { color: #1a365d; }
+    main { max-width: 900px; margin: auto; padding: 1rem; }
+    canvas { display: block; width: 100%; height: auto; margin-bottom: 1rem; background: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Convergence 2026 Flyer</h1>
+    <div><a href="index.html">Back to website</a> &nbsp;|&nbsp; <a href="flyer.pdf" download="Convergence_2026_Flyer.pdf">Download PDF</a></div>
+  </header>
+  <main>
+    <p id="status" role="status">Loading flyer...</p>
+    <div id="pages"></div>
+    <p><a href="flyer.pdf">Open the original PDF</a></p>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    const status = document.getElementById('status');
+    const pages = document.getElementById('pages');
+
+    async function showFlyer() {
+      if (!window.pdfjsLib) {
+        status.textContent = 'The flyer viewer could not load. Please open or download the original PDF below.';
+        return;
+      }
+
+      try {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        const pdf = await pdfjsLib.getDocument('flyer.pdf').promise;
+        for (let number = 1; number <= pdf.numPages; number++) {
+          const page = await pdf.getPage(number);
+          const original = page.getViewport({ scale: 1 });
+          const viewport = page.getViewport({ scale: Math.min(1400 / original.width, 4096 / original.height) });
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.ceil(viewport.width);
+          canvas.height = Math.ceil(viewport.height);
+          canvas.setAttribute('aria-label', `Flyer page ${number} of ${pdf.numPages}`);
+          pages.appendChild(canvas);
+          await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+        }
+        status.textContent = '';
+      } catch (error) {
+        console.error('Unable to display the flyer:', error);
+        status.textContent = 'The flyer could not be displayed. Please open or download the original PDF below.';
+      }
+    }
+
+    showFlyer();
+  </script>
+</body>
+</html>

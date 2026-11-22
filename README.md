@@ -40,4 +40,6 @@ Connect with the CCT community: [CCT on LinkedIn](https://www.linkedin.com/compa
 
 To edit the website locally, clone or download this repository, then edit `index.html` in a code editor such as Visual Studio Code. Keep the image folders and files alongside the page. Open `index.html` in a browser to preview your changes.
 
+To preview the flyer viewer locally, run `python -m http.server 8000` in the repository folder and visit `http://localhost:8000`. The viewer requires an internet connection to load PDF.js.
+
 Local edits do not change the live website. Publishing requires write access to this repository and pushing changes to its GitHub Pages branch.
