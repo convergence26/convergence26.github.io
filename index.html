@@ -118,18 +118,41 @@
         <a href="https://calendar.app.google/cDs9teHwLKaFQCNB9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-amber-300 hover:text-white font-semibold underline decoration-amber-400/60 underline-offset-2 transition-colors">
           <i data-lucide="calendar-plus" class="w-3.5 h-3.5 text-amber-400"></i> Calendar Invite
         </a>
-        <a href="https://meet.google.com/oto-hckd-bvn" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1 text-emerald-300 hover:text-white font-semibold underline decoration-emerald-400/60 underline-offset-2 transition-colors">
-          <i data-lucide="video" class="w-3.5 h-3.5 text-emerald-400"></i> Google Meet
-        </a>
       </div>
-      <div class="flex items-center space-x-4 text-slate-300">
-        <span class="flex items-center gap-1 text-amber-400 font-bold">
-          <i data-lucide="calendar" class="w-3.5 h-3.5"></i> 28&ndash;29 NOVEMBER 2026
+      <div class="flex items-center space-x-3 text-slate-300">
+        <span class="flex items-center gap-1 text-amber-400 font-bold whitespace-nowrap">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i> 28&ndash;29 NOV 2026
         </span>
-        <span class="text-slate-600 hidden md:inline">|</span>
-        <a href="mailto:cct.convergence.2026@gmail.com" class="hover:text-white flex items-center gap-1">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i> cct.convergence.2026@gmail.com
-        </a>
+        <span class="text-slate-600 hidden sm:inline">|</span>
+
+        <!-- Mail Option Dropdown (Primary & Secondary Emails) -->
+        <details class="relative">
+          <summary class="list-none cursor-pointer flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 shadow-xs transition-colors [&::-webkit-details-marker]:hidden">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span class="font-semibold text-xs">Official Emails</span>
+            <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
+          </summary>
+          <div class="absolute right-0 top-full mt-1.5 z-50 w-80 rounded-xl bg-slate-900 border border-slate-700 p-3.5 shadow-2xl text-left space-y-2.5">
+            <div>
+              <div class="flex items-center justify-between text-[10px] uppercase font-bold text-emerald-400 mb-1">
+                <span>Primary Email</span>
+                <span class="px-1.5 py-0.5 bg-emerald-500/20 text-emerald-300 rounded text-[9px] font-mono">PRIMARY</span>
+              </div>
+              <a href="mailto:cct.convergence.2026@gmail.com" class="text-xs text-white hover:text-amber-300 font-mono block break-all font-semibold">
+                cct.convergence.2026@gmail.com
+              </a>
+            </div>
+            <div class="border-t border-slate-800 pt-2">
+              <div class="flex items-center justify-between text-[10px] uppercase font-bold text-slate-400 mb-1">
+                <span>Secondary Email</span>
+                <span class="px-1.5 py-0.5 bg-slate-800 text-slate-300 rounded text-[9px] font-mono">SECONDARY</span>
+              </div>
+              <a href="mailto:convergence.cct.2026@gmail.com" class="text-xs text-slate-300 hover:text-amber-300 font-mono block break-all">
+                convergence.cct.2026@gmail.com
+              </a>
+            </div>
+          </div>
+        </details>
       </div>
     </div>
   </div>
@@ -245,7 +268,7 @@
         <i data-lucide="bell" class="w-3 h-3"></i> Announcement
       </span>
       <div class="truncate text-xs font-medium">
-        Abstract & Poster Deadline: <strong>27 November 2026</strong> &middot; Hybrid Mode: <a href="https://calendar.app.google/cDs9teHwLKaFQCNB9" target="_blank" rel="noopener noreferrer" class="underline font-bold text-amber-900 hover:text-black">Add to Calendar (Google Meet inside)</a> &middot; Primary inquiries: <strong>cct.convergence.2026@gmail.com</strong>
+        Abstract & Poster Deadline: <strong>27 November 2026</strong> &middot; Hybrid Mode: <a href="https://calendar.app.google/cDs9teHwLKaFQCNB9" target="_blank" rel="noopener noreferrer" class="underline font-bold text-amber-900 hover:text-black">Add to Calendar (Google Meet inside)</a> &middot; Primary: <strong>cct.convergence.2026@gmail.com</strong> &middot; Secondary: <strong>convergence.cct.2026@gmail.com</strong>
       </div>
     </div>
   </div>
@@ -1617,8 +1640,17 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
               </tbody>
             </table>
           </div>
-          <div class="pt-4 text-xs text-slate-600 space-y-1.5">
-            <p><strong>Official Contact Email (Primary):</strong> <a href="mailto:cct.convergence.2026@gmail.com" class="text-univBlue font-mono">cct.convergence.2026@gmail.com</a></p>
+          <div class="pt-4 text-xs text-slate-600 space-y-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-bold text-slate-800">Primary Contact Email:</span>
+              <a href="mailto:cct.convergence.2026@gmail.com" class="text-univBlue font-mono font-semibold">cct.convergence.2026@gmail.com</a>
+              <span class="text-[9px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">Primary</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-bold text-slate-800">Secondary Email:</span>
+              <a href="mailto:convergence.cct.2026@gmail.com" class="text-slate-600 font-mono">convergence.cct.2026@gmail.com</a>
+              <span class="text-[9px] font-bold uppercase tracking-wider text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">Secondary</span>
+            </div>
             <p><strong>Official University Site:</strong> <a href="https://www.uniraj.ac.in/" target="_blank" rel="noopener noreferrer" class="text-univBlue underline">uniraj.ac.in</a></p>
           </div>
         </div>
@@ -1631,7 +1663,7 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
           <a href="https://forms.gle/9TNX1Me2b3MtRLJk8" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded bg-amber-500 px-4 py-3 text-xs font-bold uppercase tracking-wider text-slate-950 shadow transition-colors hover:bg-amber-400">
             Fill Official Registration Form <i data-lucide="external-link" class="w-4 h-4"></i>
           </a>
-          <p class="mt-4 border-t border-slate-200 pt-4 text-xs text-slate-600">Questions? Contact the symposium team at <a href="mailto:cct.convergence.2026@gmail.com" class="font-semibold text-univBlue underline">cct.convergence.2026@gmail.com</a>.</p>
+          <p class="mt-4 border-t border-slate-200 pt-4 text-xs text-slate-600">Questions? Contact the symposium team at <a href="mailto:cct.convergence.2026@gmail.com" class="font-semibold text-univBlue underline">cct.convergence.2026@gmail.com</a> (Primary) or <a href="mailto:convergence.cct.2026@gmail.com" class="text-slate-600 underline font-mono">convergence.cct.2026@gmail.com</a> (Secondary).</p>
         </div>
 
       </div>
@@ -1962,13 +1994,23 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
           Feel free to reach out to the organizing team for registration queries, poster guidelines, or accommodation details.
         </p>
         <div class="pt-4 flex flex-wrap justify-center items-center gap-4 text-xs font-medium">
-          <a href="mailto:cct.convergence.2026@gmail.com" class="px-4 py-2.5 rounded-lg bg-univNavy text-white hover:bg-slate-800 transition-colors flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i>
-            <span>cct.convergence.2026@gmail.com</span>
+          <a href="mailto:cct.convergence.2026@gmail.com" class="px-4 py-2.5 rounded-xl bg-univNavy text-white hover:bg-slate-800 transition-colors flex items-center gap-3 border border-slate-700 shadow-xs text-left">
+            <i data-lucide="mail" class="w-5 h-5 text-emerald-400"></i>
+            <div>
+              <span class="block text-[9px] uppercase tracking-wider text-emerald-300 font-bold">Primary Email</span>
+              <span class="font-mono text-xs font-semibold">cct.convergence.2026@gmail.com</span>
+            </div>
           </a>
-          <a href="https://www.uniraj.ac.in/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg border border-slate-300 hover:bg-slate-50 transition-colors flex items-center gap-2">
+          <a href="mailto:convergence.cct.2026@gmail.com" class="px-4 py-2.5 rounded-xl bg-white text-slate-800 hover:bg-slate-100 transition-colors flex items-center gap-3 border border-slate-300 shadow-xs text-left">
+            <i data-lucide="mail" class="w-5 h-5 text-slate-500"></i>
+            <div>
+              <span class="block text-[9px] uppercase tracking-wider text-slate-500 font-bold">Secondary Email</span>
+              <span class="font-mono text-xs">convergence.cct.2026@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.uniraj.ac.in/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors flex items-center gap-2 shadow-xs">
             <i data-lucide="globe" class="w-4 h-4 text-cyan-600"></i>
-            <span>Visit University of Rajasthan Portal</span>
+            <span>University Portal</span>
           </a>
         </div>
       </div>
@@ -2019,11 +2061,12 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
         <!-- Col 4 -->
         <div>
           <h5 class="text-white font-bold uppercase tracking-wider mb-3 text-xs">Contact team</h5>
-          <p class="text-slate-400 leading-relaxed text-[11px]">
-            CCT Convergence 2026 Team<br>
-            Email: <a href="mailto:cct.convergence.2026@gmail.com" class="text-amber-400 font-mono">cct.convergence.2026@gmail.com</a><br>
-            Venue: CCT, Univ. of Rajasthan, Jaipur
-          </p>
+          <div class="text-slate-400 leading-relaxed text-[11px] space-y-1">
+            <p class="font-semibold text-slate-200">CCT Convergence 2026 Team</p>
+            <p><strong>Primary Email:</strong> <a href="mailto:cct.convergence.2026@gmail.com" class="text-amber-400 font-mono">cct.convergence.2026@gmail.com</a></p>
+            <p><strong>Secondary Email:</strong> <a href="mailto:convergence.cct.2026@gmail.com" class="text-slate-400 hover:text-amber-300 font-mono">convergence.cct.2026@gmail.com</a></p>
+            <p>Venue: CCT, Univ. of Rajasthan, Jaipur</p>
+          </div>
           <div class="flex flex-wrap gap-4 mt-4">
             <a href="https://www.linkedin.com/company/centre-for-converging-technologies-uor-jaipur" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-white">
               <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/linkedin.svg" alt="" class="w-4 h-4 invert">
