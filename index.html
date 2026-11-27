@@ -1337,7 +1337,7 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
               <span class="text-[10px] font-mono font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded uppercase border border-rose-200">MIT &bull; NUS &bull; Healthcare Technology</span>
-              <a href="https://www.biedx.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-rose-700 hover:text-rose-900 bg-rose-50/80 px-2 py-0.5 rounded border border-rose-200 transition-colors">BIEDX &#x2197;</a>
+              <a href="https://www.linkedin.com/in/sharmarajeshkumar/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors"><i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn &#x2197;</a>
             </div>
             <div class="flex items-center gap-3.5 mb-2.5">
               <img src="speakers/rajesh-sharma.jpg" alt="Dr. Rajesh Sharma, Ph.D., MBA" class="w-14 h-14 rounded-full object-cover object-top border-2 border-rose-400/80 shadow-xs flex-shrink-0">
@@ -1362,49 +1362,299 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
   <!-- Programme Schedule -->
   <section id="schedule" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-10">
-        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Symposium Schedule</span>
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <span class="text-amber-700 text-xs font-bold uppercase tracking-wider">Two-Day Symposium Programme &bull; 28&ndash;29 November 2026 &bull; Jaipur</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-univNavy mt-1">Programme Schedule</h2>
-        <div class="h-1 w-20 bg-amber-500 mx-auto rounded mt-3 mb-2"></div>
+        <div class="h-1 w-20 bg-amber-500 mx-auto rounded mt-3 mb-3"></div>
+        <p class="text-xs text-slate-500">
+          Most talks are allotted 25 minutes (20-minute talk + 5-minute Q&amp;A). Times and unconfirmed participation details are provisional.
+        </p>
       </div>
-      <!-- Download Schedule PDF -->
-      <div class="flex justify-center mb-8">
-        <a href="schedule.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-univNavy text-white text-xs font-bold uppercase tracking-wider hover:bg-slate-800 transition-colors shadow">
-          <i data-lucide="download" class="w-4 h-4 text-amber-400"></i>
-          Download Full Schedule (PDF)
+
+      <!-- Day Switcher + PDF Download -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+        <button type="button" id="tab-day1" onclick="document.getElementById('schedule-day1').classList.remove('hidden');document.getElementById('schedule-day2').classList.add('hidden');this.className='px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-xs bg-univNavy text-white border border-univNavy';document.getElementById('tab-day2').className='px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-300';" class="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-xs bg-univNavy text-white border border-univNavy">
+          Day 1 &bull; Sat, 28 Nov
+        </button>
+        <button type="button" id="tab-day2" onclick="document.getElementById('schedule-day2').classList.remove('hidden');document.getElementById('schedule-day1').classList.add('hidden');this.className='px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-xs bg-univNavy text-white border border-univNavy';document.getElementById('tab-day1').className='px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-300';" class="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-300">
+          Day 2 &bull; Sun, 29 Nov
+        </button>
+        <a href="schedule.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider transition-colors shadow-xs">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          Download PDF
         </a>
       </div>
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Day 1: 28 November 2026 -->
-        <div class="academic-card p-6 sm:p-8 rounded-2xl border border-amber-200 bg-white shadow-xs text-center flex flex-col items-center justify-center space-y-3">
-          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mb-1">
-            <i data-lucide="calendar" class="w-6 h-6"></i>
-          </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">Day 1 &middot; 28 November 2026</span>
-          <h3 class="text-lg font-bold text-univNavy">Inaugural &amp; Technical Sessions</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md">
-            Registration &bull; Inaugural Ceremony &bull; Keynote Addresses &bull; Technical Paper Presentations &bull; Poster Session
-          </p>
-          <a href="schedule.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-700 hover:text-amber-900 underline mt-1">
-            <i data-lucide="file-text" class="w-3.5 h-3.5"></i> View Detailed Schedule
-          </a>
-        </div>
 
-        <!-- Day 2: 29 November 2026 -->
-        <div class="academic-card p-6 sm:p-8 rounded-2xl border border-indigo-200 bg-white shadow-xs text-center flex flex-col items-center justify-center space-y-3">
-          <div class="w-12 h-12 rounded-full bg-indigo-100 text-indigo-800 flex items-center justify-center mb-1">
-            <i data-lucide="calendar" class="w-6 h-6"></i>
+      <!-- DAY 1: Saturday, 28 November 2026 -->
+      <div id="schedule-day1" class="max-w-6xl mx-auto space-y-4">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+          <div class="bg-univNavy text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-sm sm:text-base font-bold">Day 1 &mdash; Saturday, 28 November 2026</h3>
+            <span class="text-[11px] font-mono text-amber-300">Inaugural, Technical Tracks, Poster Session &amp; Roundtable</span>
           </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-full">Day 2 &middot; 29 November 2026</span>
-          <h3 class="text-lg font-bold text-univNavy">Technical &amp; Valedictory Sessions</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md">
-            Invited Talks &bull; Parallel Technical Sessions &bull; Award Ceremony &bull; Valedictory Function &bull; Cultural Programme
-          </p>
-          <a href="schedule.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-700 hover:text-indigo-900 underline mt-1">
-            <i data-lucide="file-text" class="w-3.5 h-3.5"></i> View Detailed Schedule
-          </a>
+
+          <div class="divide-y divide-slate-200 text-xs">
+            <!-- 09:00-09:30 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6 items-center">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy">09:00&ndash;09:30</div>
+              <div class="md:col-span-10 font-semibold text-slate-800">Registration and Welcome</div>
+            </div>
+
+            <!-- 09:30-10:00 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6 items-center bg-amber-50/40">
+              <div class="md:col-span-2 font-mono font-bold text-amber-800">09:30&ndash;10:00</div>
+              <div class="md:col-span-10">
+                <p class="font-bold text-univNavy">Opening &amp; Inauguration</p>
+                <p class="text-slate-600 mt-0.5">Welcome address, opening remarks, and release of the digital abstract booklet.</p>
+              </div>
+            </div>
+
+            <!-- 10:05-11:20 Parallel Track 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy pt-1">10:05&ndash;11:45</div>
+              <div class="md:col-span-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Track A -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">Track A &bull; Session 1a</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Brain Signals and Clinical Change</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Neeraj Upadhyay &bull; Co-Chair: Dr. Samit Chatterjee</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">10:05</span> <strong>Rajnish Gupta</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">EEG-Neurofeedback Intervention in Traumatic Brain Injury</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:30</span> <strong>Navkiran Kalsi</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">The Social Feedback Loop: When Unexpected Social Feedback Triggers Amplified Neural Activity in Problematic Internet Use</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:55</span> <strong>Gunjan Joshi</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Does &ldquo;How We Retrieve&rdquo; Matter? The Role of Emotional Valence in False Memory Across Recall and Recognition</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">11:20</span> <strong>Komal</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Adaptive Mind: Neural and Behavioural Evidence on Response Inhibition and Cognitive Flexibility</span></li>
+                  </ul>
+                </div>
+                <!-- Track B -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-100 text-sky-800">Track B &bull; Session 1b</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Nanomaterials for Energy and the Environment</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Vinay Sharma &bull; Co-Chair: Dr. Chhagan Lal</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">10:05</span> <strong>Himmat Singh</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Catalysts and Sensors for Environmental Applications</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:30</span> <strong>Abhijeet Ojha</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">2D Nanomaterials for Environmental Applications</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:55</span> <strong>Arvind Bhardwaj</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">Critical Minerals and Their Circularity in India</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">11:20</span> <strong>Ankit Goyal</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">The Future is Powered by Solid-State Batteries</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11:45-12:05 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">11:45&ndash;12:05</div>
+              <div class="md:col-span-10 font-semibold text-slate-700">Tea Break</div>
+            </div>
+
+            <!-- 12:05-13:00 Session 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy">12:05&ndash;13:00</div>
+              <div class="md:col-span-10 space-y-1.5">
+                <p class="font-bold text-univNavy text-sm">Session 2 | AI and Diagnostics <span class="text-[11px] font-normal text-slate-500 italic">(Chair: Deepak Sharma &bull; Co-Chair: Dr. Dinesh Kumar)</span></p>
+                <ul class="space-y-1 text-slate-700">
+                  <li><strong>Kuldeep Singh</strong> &mdash; <span class="italic">AI in Digital Pathology</span></li>
+                  <li><strong>Parag Khobragade</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span> &mdash; <span class="italic">Application of AI in Product Development and Clinical Implementation</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 13:00-14:00 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">13:00&ndash;14:00</div>
+              <div class="md:col-span-10 font-semibold text-slate-700">Lunch</div>
+            </div>
+
+            <!-- 14:00-15:40 Parallel Track 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy pt-1">14:00&ndash;15:40</div>
+              <div class="md:col-span-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Track A -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">Track A &bull; Session 3a</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Behaviour, Modulation and the Aesthetic Brain</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Navkiran Kalsi &bull; Co-Chair: Dr. Harsha Sharma</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">14:00</span> <strong>Neeraj Upadhyay</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Neural Modulation of Behavior: Insights from Neuroimaging and Intervention</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">14:25</span> <strong>Pankaj Tak</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Brain Functional Connectivity and Metabolic Alterations in Spinocerebellar Ataxia: Insights into Disease Mechanisms</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">14:50</span> <strong>Sanjeev Nara</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Neural Correlates of Aesthetic Experiences in Natural Scenes: Insights from Neuroimaging and Deep Neural Networks</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">15:15</span> <strong>Dr. Ramya Ganapathi</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Insights into Radiation-Induced Neurotoxicity: Connecting Behavioural Phenotypes with Cellular and Structural Changes Using Preclinical Paradigms</span></li>
+                  </ul>
+                </div>
+                <!-- Track B -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-100 text-sky-800">Track B &bull; Session 3b</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Nano-Bio Engineering and Applied Bioscience</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Himmat Singh &bull; Co-Chair: Dr. Ram Hari Meena</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">14:00</span> <strong>Vinay Sharma</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Engineering Responsive Nano-Bio Interfaces: From Single-Molecule Sensing to Redox Modulation</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">14:25</span> <strong>Mr. Sachin Dubey</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Building Next-Generation Ultra-Rapid Diagnostics Platform to Combat Antimicrobial Resistance (AMR)</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">14:50</span> <strong>Lokesh Agarwal</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Personalized Implants for Tissue Engineering</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">15:15</span> <strong>Sanjay Kumar</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Nanobiotechnological Approach for the Detection of Contamination in Food</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15:40-16:30 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">15:40&ndash;16:30</div>
+              <div class="md:col-span-10 font-semibold text-slate-800">Session 4 | Poster Session (Day 1) and High Tea</div>
+            </div>
+
+            <!-- 16:30-17:30 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6 bg-amber-50/40">
+              <div class="md:col-span-2 font-mono font-bold text-amber-800">16:30&ndash;17:30</div>
+              <div class="md:col-span-10 space-y-1.5">
+                <p class="font-bold text-univNavy text-sm">Session 5 Roundtable | Careers and Innovation: From Research to Industry and Startups <span class="text-[11px] font-normal text-slate-500 italic">(Chair: Lokesh Agarwal &bull; Co-Chair: Dr. Preeti Mishra)</span></p>
+                <ul class="space-y-1 text-slate-700">
+                  <li><strong>Sachin Dubey</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span> &mdash; <span class="italic">Careers in the Biotechnology Industry</span></li>
+                  <li><strong>Sanjay Kumar</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span> &mdash; <span class="italic">Careers in Forensic Sciences</span></li>
+                  <li><strong>Deepak Sharma &amp; Dr. Jay Pandey</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span> &mdash; <span class="italic">Startup Engineering</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- DAY 2: Sunday, 29 November 2026 -->
+      <div id="schedule-day2" class="max-w-6xl mx-auto space-y-4 hidden">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+          <div class="bg-indigo-900 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-sm sm:text-base font-bold">Day 2 &mdash; Sunday, 29 November 2026</h3>
+            <span class="text-[11px] font-mono text-amber-300">Technical Tracks, Roundtable, Oral Presentations &amp; Valedictory</span>
+          </div>
+
+          <div class="divide-y divide-slate-200 text-xs">
+            <!-- 09:00-10:40 Parallel Track 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy pt-1">09:00&ndash;10:40</div>
+              <div class="md:col-span-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Track A -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">Track A &bull; Session 1a</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Neurological, Psychiatric and Metabolic Brain Health</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Tara Chand &bull; Co-Chair: Dr. Renu Bisht</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">09:00</span> <strong>Dr. Poonam Yadav</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Nanoengineered Materials for Energy Storage Applications</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">09:25</span> <strong>Himanshu Joshi</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Neuroimaging Cognition and Neuromodulation in Disorders of Aging</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">09:50</span> <strong>Diwakar Kashyap</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Nanostructured Electrocatalysts and Electrodes: Accelerating the Hydrogen Economy</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:15</span> <strong>Abhineet</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Functional Brain Network Changes in Multiple Sclerosis</span></li>
+                  </ul>
+                </div>
+                <!-- Track B -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-100 text-sky-800">Track B &bull; Session 1b</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Energy Materials, Semiconductors and Neurotechnology</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Jaiprakash Kushwaha &bull; Co-Chair: Dr. Manisha Gupta</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">09:00</span> <strong>Hariom Sharma</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">How the Brain Filters the World: From Zebrafish to Neuropsychiatric Disorders</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">09:25</span> <strong>Manoj Jangid</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">Engineering Interfaces and Electrode Architectures for High-Performance Solid-State Batteries</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">09:50</span> <strong>Dr. Mukesh Kumar Saini</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">Brain Neurometabolic Alterations with Ageing and Neurodegeneration: Insights from Proton Magnetic Resonance Spectroscopy (&#185;H-MRS)</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">10:15</span> <strong>Sarvar Singh</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Writing at Micro-Nano Dimensions for Semiconductor Devices</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10:40-11:10 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">10:40&ndash;11:10</div>
+              <div class="md:col-span-10 font-semibold text-slate-700">Tea Break</div>
+            </div>
+
+            <!-- 11:10-13:00 Parallel Track 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy pt-1">11:10&ndash;13:00</div>
+              <div class="md:col-span-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- Track A -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">Track A &bull; Session 2a</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">Neuromodulation, Sleep, Brain Networks and AI</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Himanshu Joshi &bull; Co-Chair: Dr. Mamraj Singh</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">11:10</span> <strong>Avinash Sethi</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">From Prediction to Decision: How AI/ML Is Transforming Modern Supply Chains</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">11:35</span> <strong>Tara Chand</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">The Adaptive Brain: Understanding Stress, Emotion, and Resilience</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">12:00</span> <strong>Jai Prakash Kushwah</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">Enhancing Precision in Dexterous Object Handling via Somatosensory Feedback: Empirical Evidence</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">12:25</span> <strong>Uttam Lavania</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">NeuroTech Now: Shaping the Future of Brain Health</span></li>
+                  </ul>
+                </div>
+                <!-- Track B -->
+                <div class="rounded-xl border border-slate-200 bg-slate-50/70 p-4 space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-sky-100 text-sky-800">Track B &bull; Session 2b</span>
+                    <h4 class="font-bold text-univNavy text-sm mt-1">AI, Startups and Biotechnology Applications</h4>
+                    <p class="text-[11px] text-slate-500 italic">Chair: Dr. Poonam Yadav &bull; Co-Chair: Dr. Amanpal Singh</p>
+                  </div>
+                  <ul class="space-y-2 text-slate-700">
+                    <li><span class="font-mono font-semibold text-univNavy">11:10</span> <strong>Abhimanyu Sharma (SARV)</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">From IT Services to Software Products: Building India&rsquo;s Next Generation of AI-Powered Products</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">11:35</span> <strong>Shubham Agrawal</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">From Compute to Capability: How the IndiaAI Mission Is Building a Sovereign and Inclusive AI Ecosystem</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">12:00</span> <strong>Upma Singh</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">In person</span><br><span class="italic text-slate-600">One Health, Many Genomes: Genomic Insights into Soil Microbiomes and Multidrug-Resistant Pathogens</span></li>
+                    <li><span class="font-mono font-semibold text-univNavy">12:25</span> <strong>Rakshit Dadarwal</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span><br><span class="italic text-slate-600">Seeing More: Multiple Contrast in Brain Imaging</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 13:00-14:00 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">13:00&ndash;14:00</div>
+              <div class="md:col-span-10 font-semibold text-slate-700">Lunch</div>
+            </div>
+
+            <!-- 14:00-15:00 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6 bg-indigo-50/40">
+              <div class="md:col-span-2 font-mono font-bold text-indigo-800">14:00&ndash;15:00</div>
+              <div class="md:col-span-10 space-y-1.5">
+                <p class="font-bold text-univNavy text-sm">Session 3 Roundtable | Careers and Innovation: From Research to Industry and Startups <span class="text-[11px] font-normal text-slate-500 italic">(Chair: Prof. Sumita Kachhwaha)</span></p>
+                <ul class="space-y-1 text-slate-700">
+                  <li><strong>Vinay Sharma</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span> &mdash; <span class="italic">Careers in the Semiconductor Industry</span></li>
+                  <li><strong>Dr. Rajesh Sharma</strong> <span class="text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">Online</span> &mdash; <span class="italic">From Research to Startup and Innovation</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 15:00-16:00 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6">
+              <div class="md:col-span-2 font-mono font-bold text-univNavy">15:00&ndash;16:00</div>
+              <div class="md:col-span-10">
+                <p class="font-bold text-univNavy">Session 4 | Oral Presentations</p>
+                <p class="text-slate-600 mt-0.5">Six 10-minute oral talks.</p>
+              </div>
+            </div>
+
+            <!-- 16:00-16:40 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-3.5 sm:px-6 items-center bg-slate-100/70">
+              <div class="md:col-span-2 font-mono font-bold text-slate-600">16:00&ndash;16:40</div>
+              <div class="md:col-span-10 font-semibold text-slate-800">Networking over High Tea and Poster Viewing</div>
+            </div>
+
+            <!-- 16:40-17:30 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 p-4 sm:px-6 bg-amber-50/40">
+              <div class="md:col-span-2 font-mono font-bold text-amber-800">16:40&ndash;17:30</div>
+              <div class="md:col-span-10">
+                <p class="font-bold text-univNavy">Valedictory Session</p>
+                <p class="text-slate-600 mt-0.5">Awards, student recognition, vote of thanks, and closing remarks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1961,11 +2211,12 @@ Assistant Professor, NIMS University, specializing in microbial genomics, proteo
               <button onclick="document.getElementById('biedx-desc-short').classList.add('hidden');document.getElementById('biedx-desc-full').classList.remove('hidden');this.classList.add('hidden');" class="mt-1 text-rose-600 hover:text-rose-800 font-semibold text-[11px] underline">Know more &rarr;</button>
             </div>
           </div>
-          <div class="mt-4 pt-3 border-t border-slate-100">
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
             <a href="https://www.biedx.com" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-univNavy hover:text-rose-600 inline-flex items-center gap-1 transition-colors">
               <span>Visit Official Website</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
+            <a href="https://www.linkedin.com/company/biedx/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold text-[#0a66c2] hover:text-[#004182] bg-blue-50/80 px-2 py-0.5 rounded border border-blue-200 transition-colors"><i data-lucide="linkedin" class="w-3 h-3"></i> LinkedIn &#x2197;</a>
           </div>
         </div>
 
